@@ -6,7 +6,7 @@ brew install pyenv
 # install python required packages
 brew install openssl readline sqlite3 xz zlib
 # add pyenv to shell
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 # Install python 3.x
 brew install python
 # Install pipx to manage global packages
@@ -44,4 +44,4 @@ gpip(){
 gpip3(){
    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
-' >>~/.bash_profile
+' >>~/.zshrc

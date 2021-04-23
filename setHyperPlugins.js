@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const preferencePath = '/Users/fresh/.hyper.js'
+const preferencePath = '/Users/kusold/.hyper.js'
 
 if(fs.existsSync(preferencePath)){
     // make a backup
