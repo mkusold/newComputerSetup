@@ -18,9 +18,9 @@ python3 -m pipx install black
 # install the latest python 2.7
 brew install python@2
 # get a stable version of python installed
-pyenv install 3.7.3
+pyenv install 3.9.10
 # set it as the global python version
-pyenv global 3.7.3
+pyenv global 3.9.10
 # install poetry
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 source $HOME/.poetry/env
@@ -28,6 +28,9 @@ source $HOME/.poetry/env
 poetry config virtualenvs.in-project true
 # bash profile config
 echo '
+# To properly set python3 as the default
+PATH=$(pyenv root)/shims:$PATH
+
 # pipx
 export PATH="~/.local/bin:$PATH"
 

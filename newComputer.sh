@@ -41,6 +41,8 @@ echo '
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"' >>~/.zshrc
 # auto-install favorite extensions
 bash ./vscodeExtensions.sh
+# make vscode the default git editor
+git config --global core.editor "code"
 
 # install hyper gitkraken
 brew install gitkraken
