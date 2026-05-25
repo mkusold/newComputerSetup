@@ -74,5 +74,6 @@ echo '
 alias ding="afplay /System/Library/Sounds/Glass.aiff"
 alias dev="cd ~/Development
 alias modified-coverage="git changed-files | xargs npx jest --coverage --collectCoverageOnlyFrom"
+alias restart="$HOME/Development/newComputerSetup/scripts/auto_restart.sh"
 ' >>~/.zshrc
 
